@@ -1,0 +1,33 @@
+@import "values";
+
+
+
+.characters {
+    @include flex(flex-end);
+    background-color: tan;
+    h1{
+        color: #ddd;
+        &:hover{
+            @extend %center
+        }
+    }
+    h2{
+        background-color: $brown1;
+    }
+    h3{
+        color: $brown1;
+    }
+}
+
+.middle-earth{
+    background-color: silver;
+    h1{
+        text-decoration: underline;
+        margin-bottom: 100px;
+        @extend %center
+    }
+    h2{
+        text-decoration: line-through;
+        @extend %center
+    }
+}
